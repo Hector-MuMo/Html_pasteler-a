@@ -1,0 +1,208 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffcccc;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navegación */
+header {
+  height: 80px;
+  background-color: #763c00;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-header {
+  font-size: 25px;
+  color: #ffcccc;
+}
+
+.title-header > figure {
+  margin: 5px 0 0 50px;
+  max-width: 70px;
+}
+
+.links-header {
+  margin: 30px 20px 0 0;
+}
+
+span {
+  font-size: 20px;
+  color: red;
+}
+
+.links-header > span > a {
+  font-size: 20px;
+  color: #647990;
+  text-decoration: none;
+}
+
+/* Tarjetas Pasteles */
+
+.container-main h2 {
+  padding-left: 30px;
+  color: #763c00;
+}
+
+.container-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
+  justify-content: center;
+}
+
+.container-tarjeta-pastel {
+  background-color: #b0f2c2;
+  max-width: fit-content;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.container-tarjeta-pastel figure {
+  max-width: 300px;
+  height: 200px;
+  border: #b0c2f2 solid 3px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+/* Tarjetas Adornos */
+.container-tarjeta-adorno {
+  background-color: #b0c2f2;
+  max-width: fit-content;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.container-tarjeta-adorno figure {
+  width: 300px;
+  height: 200px;
+  border: #b0f2c2 solid 3px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+/* Formulario */
+
+.container-form > h2 {
+  color: #763c00;
+  padding-left: 30px;
+}
+
+.container-form > p {
+  color: #763c00;
+  padding-left: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 5px 15px 15px 15px;
+  background-color: #fcb7af;
+  border: #d8f8e1 solid 3px;
+  border-radius: 20px;
+}
+
+.form > h3 {
+  color: #647990;
+}
+
+.inner-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-form > label {
+  margin-bottom: 10px;
+  color: #763c00;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.inner-form > input,
+select,
+textarea {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 15px #fff;
+  resize: none;
+}
+
+.inner-form > select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+.inner-form > button {
+  width: 80px;
+  padding: 5px;
+  background-color: #763c00;
+  color: #ffcccc;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: #763c00;
+  color: #ffcccc;
+}
+
+footer > ul {
+  list-style: none;
+}
+
+ul > li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .container-tarjeta-adorno figure {
+    width: auto;
+  }
+  .title-header > h1 {
+    font-size: 16px;
+  }
+
+  .links-header {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .title-header > h1 {
+    font-size: 25px;
+  }
+
+  .links-header {
+    font-size: 16px;
+  }
+}

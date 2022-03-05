@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./clientes.css">
+    <title>Pasteletes | Clientes</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-header">
+            <div class="title-header">
+                <figure><img src="../assets/Pasteletes_circular.png" alt="log"></figure>
+            </div>
+            <div class="links-header">
+                <span>|<a href="/"> Home </a>|</span>
+                <span>|<a href="/pasteleros"> Sección Pasteleros </a>|</span>
+                <span>|<a href="#Contacto" style="color: salmon;"> ¡Pide Ahora! </a>|</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <h2>Nuestros Pasteles</h2>
+            <div class="container-tarjetas">
+                <div class="container-tarjeta-pastel">
+                    <h3>Pastel de Chocolate</h3>
+                    <figure>
+                        <img src="../assets/chocolate.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Delicioso pastel de Cocolate detallado</figcaption>
+                    <p><span>Precio</span>: $300</p>
+                </div>
+                <div class="container-tarjeta-pastel">
+                    <h3>Pastel de Vainilla</h3>
+                    <figure>
+                        <img src="../assets/vainilla.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Delicioso pastel de Vainilla decorado con fresas</figcaption>
+                    <p><span>Precio</span>: $300</p>
+                </div>
+                <div class="container-tarjeta-pastel">
+                    <h3>Pastel de Fresa</h3>
+                    <figure>
+                        <img src="../assets/fresa.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Delicioso pastel de Fresa detallado con crema de la casa</figcaption>
+                    <p><span>Precio</span>: $300</p>
+                </div>
+                <div class="container-tarjeta-pastel">
+                    <h3>Pastel de Limón</h3>
+                    <figure>
+                        <img src="../assets/limon.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Delicioso pastel de Limon tipo pay</figcaption>
+                    <p><span>Precio</span>: $300</p>
+                </div>
+            </div>
+            <h2>Adornos</h2>
+            <div class="container-tarjetas">
+                <div class="container-tarjeta-adorno">
+                    <h3>Adorno de Circo</h3>
+                    <figure>
+                        <img src="../assets/adorno_circo.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Adorno especial para los amantes de la magia y los payasos</figcaption>
+                    <p><span>Precio</span>: $200</p>
+                </div>
+                <div class="container-tarjeta-adorno">
+                    <h3>Adorno Construcción</h3>
+                    <figure>
+                        <img src="../assets/adorno_construccion.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Decoración especia tipo construcción</figcaption>
+                    <p><span>Precio</span>: $200</p>
+                </div>
+                <div class="container-tarjeta-adorno">
+                    <h3>Adorno Tiburones</h3>
+                    <figure>
+                        <img src="../assets/adorno_tiburones.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>Adorno para un pastel submarino</figcaption>
+                    <p><span>Precio</span>: $200</p>
+                </div>
+                <div class="container-tarjeta-adorno">
+                    <h3>Velas Mágicas</h3>
+                    <figure>
+                        <img src="../assets/adorno_velas.jpg" alt="pastel-chocolate">
+                    </figure>
+                    <figcaption>La pieza que no debe faltar en un pastel</figcaption>
+                    <p><span>Precio</span>: $200</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-form">
+            <h2 id="Contacto">Contacto</h2>
+            <p>¡Aqui puedes elegir el paste que quieras!</p>
+            <p>Recuerda que puedes hacer las combiaciones que quieras</p>
+            <form class="form" action="">
+                <h3>Llena el formulario de Contacto</h3>
+                <div class="inner-form">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id='name' name="name">
+                    <label for="phone">Telefono</label>
+                    <input type="tel" id='phone' name="phone">
+                    <label for="emal">Email</label>
+                    <input type="email" id='email' name="email">
+                    <label for="description">Cuentanos si quieres algo más</label>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    <label for="flavors">Sabores</label>
+                    <select id="flavors" name="flavors">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="vanilla">Vainilla</option>
+                        <option value="strawberry">Fresa</option>
+                        <option value="lemon">Limón</option>
+                    </select>
+                    <label for="topics">Adornos</label>
+                    <select id="topics" name="topics">
+                        <option value="circus">Circo</option>
+                        <option value="construction">Construcción</option>
+                        <option value="sharks">Tiburnos</option>
+                        <option value="candle">Velas Mágica</option>
+                    </select>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <address>Av. del Cauce 143, Ciudad de Toussant, Toussant</address>
+            </li>
+            <li>Telefono: 5577884411 </li>
+            <li>Horario: 10am - 8pm | Todos los días </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
